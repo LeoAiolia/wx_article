@@ -16,11 +16,18 @@
 
 <img src="src/assets/qrcode_for_gh_e6ca0010804e_430.jpg" width="200" alt="公众号二维码">
 
+## 文章目录
+
+| 序号 | 文章 | 分类 |
+|---|---|---|
+| 01 | [成为 iOS 开发者，你需要准备什么？](src/ios/01-becoming-ios-developer.md) | iOS |
+
 ## 目录结构
 
 ```
 wx_article/
-├── src/              # 文章源文件
+├── src/
+│   ├── ios/          # iOS 相关文章
 │   └── assets/       # 图片等静态资源
 └── README.md
 ```
