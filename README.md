@@ -22,6 +22,7 @@
 |---|---|---|
 | 01 | [成为 iOS 开发者，你需要准备什么？](src/ios/01-becoming-ios-developer.md) | iOS |
 | 02 | [当老板学会了用AI](src/ai/01-when-boss-learns-ai.md) | AI |
+| 03 | [初中物理题里的熊，毛发竟然是无色的](src/life/01-polar-bear-fur.md) | 生活 |
 
 ## 目录结构
 
@@ -30,6 +31,7 @@ wx_article/
 ├── src/
 │   ├── ios/          # iOS 相关文章
 │   ├── ai/           # AI 相关文章
+│   ├── life/         # 生活杂谈
 │   └── assets/       # 图片等静态资源
 └── README.md
 ```
