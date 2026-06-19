@@ -21,6 +21,7 @@
 | 序号 | 文章 | 分类 |
 |---|---|---|
 | 01 | [成为 iOS 开发者，你需要准备什么？](src/ios/01-becoming-ios-developer.md) | iOS |
+| 02 | [当老板学会了用AI](src/ai/01-when-boss-learns-ai.md) | AI |
 
 ## 目录结构
 
@@ -28,6 +29,7 @@
 wx_article/
 ├── src/
 │   ├── ios/          # iOS 相关文章
+│   ├── ai/           # AI 相关文章
 │   └── assets/       # 图片等静态资源
 └── README.md
 ```
