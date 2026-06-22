@@ -17,6 +17,41 @@ AI 已经能写很多代码，但移动端项目不是 demo。真实项目里有
 
 ---
 
+## 工具箱速览
+
+在讨论工作流之前，先看清工具箱里有什么。
+
+### Xcode 内置（26.3+）
+
+从 Xcode 26.3 起，Apple 原生集成了 agentic coding——AI 代理可以直接读取项目结构、搜索 Apple 文档、修改文件、构建修复、运行测试、操作 Preview 验证 UI。到 Xcode 27，进一步加入了 Plan Mode、多代理协作、Gemini 作为第三方模型选项。对 iOS 开发者来说，这是最「原生」的体验——不需要离开 IDE，AI 天然理解 Xcode 项目和 Apple 框架。
+
+### 终端 / CLI 类
+
+| 工具 | 特点 |
+|------|------|
+| **Claude Code** | Anthropic 出品，终端运行，也提供 VS Code / JetBrains 插件。在大型重构、多文件变更、安全审计上表现突出。支持 worktree 隔离 + 子代理并行。1M token 上下文窗口。 |
+| **OpenAI Codex** | OpenAI 的终端代理，GPT-5 驱动，支持异步云端任务和 VS Code 插件。 |
+
+### 编辑器 / IDE 类
+
+| 工具 | 特点 |
+|------|------|
+| **Cursor** | 从 VS Code 分支出来的独立编辑器，底层重构了 AI 交互，补全体验比「VS Code + 插件」更流畅。支持多模型切换。 |
+| **GitHub Copilot** | 覆盖面最广，VS Code、JetBrains、Xcode 均可使用。但代理能力落后于 Claude Code 和 Cursor。 |
+
+> 对 iOS / Flutter 开发者而言，不管你用哪款工具，AI 可以帮你分析代码、运行 `flutter analyze`，但**最终编译和真机调试仍然要回到 Xcode**。
+
+### 两条实际路线
+
+不用纠结「哪个最好」，按你的工作习惯选一条：
+
+- **Xcode 为主路线**：Xcode 内置 Agent 负责日常编码，终端工具（Claude Code / Codex）处理离线重构和复杂任务。
+- **VS Code / Cursor 路线**：Flutter 开发或以 VS Code 为主的团队，用 Cursor 或 Copilot 做日常补全，Claude Code 处理深度任务，Xcode 只用来编译和真机调试。
+
+关键不是选了哪个工具，而是**怎么控制它**——这是本文后面的重点。
+
+---
+
 ## 一、适合交给 AI 的事情
 
 适合交给 AI 的任务，通常有三个特点：边界清楚、模式固定、容易验证。
@@ -26,18 +61,18 @@ AI 已经能写很多代码，但移动端项目不是 demo。真实项目里有
 - SwiftUI / Flutter 页面骨架
 - Model / DTO / Repository 样板代码
 - ViewModel / Controller 的基础状态流
-- 单元测试和 mock 数据
-- 小范围重构
+- Widget 树拆分和重构
+- 单元测试和 Widget Test
 - crash log / Dart analyze 报错分析
-- README 和迁移说明
+- 本地数据库建表 / 迁移脚本（Drift / Core Data / Room）
 
 这些工作不一定要全部手写。AI 可以帮你把第一版搭出来，人再负责审查和收口。
 
 ---
 
-## 二、不适合直接甩给 AI 的事情
+## 二、不适合让 AI 直接动手的事情
 
-下面这些事情不能一句话交给 AI：
+反过来，不适合让 AI 直接动手的，正是那些边界模糊、没有固定模式、不容易验证的事情。这里要区分两种参与方式：**出方案、给建议** 和 **直接写代码、改配置**。下面这些事情，可以让 AI 分析问题、列出选项、对比优劣（见第四节），但**不要让 AI 直接动手**——因为改坏了你可能根本察觉不到：
 
 - 架构选型
 - StoreKit / 订阅 / 登录态 / Token 刷新
@@ -76,9 +111,9 @@ AI 可以给方案，但不能替你负责。
 
 ---
 
-## 四、让 AI 先出方案
+## 四、复杂任务：先让 AI 出方案，再考虑动手
 
-稍微复杂的任务，不要直接让 AI 改代码。
+稍微复杂的任务，不要直接让 AI 改代码。包括第二节提到的架构选型、跨端方案选择等"高风险但适合讨论"的任务，都可以走这条路径。
 
 先让它回答：
 
@@ -110,9 +145,7 @@ AI 写完代码后，至少要检查：
 
 Coding Agent 越能干，越要控制权限。
 
-比如 Xcode 的 agentic coding 已经可以结合 Xcode 能力去构建项目、运行测试、搜索 Apple 文档。Claude Code 这类工具也能读代码、改文件、运行命令。
-
-这很好，但不代表应该默认放开所有权限。
+前面提到的工具，权限模型各不相同：Xcode 内置 Agent 深度集成 IDE，能改 entitlements、跑 build；Claude Code 和 Codex 作为终端工具，理论上可以操作文件系统里的任何东西。Copilot 作为编辑器插件权限相对受控，Cursor 作为独立编辑器介于二者之间。不论你用的是哪款，都不应该默认放开所有权限。
 
 建议把权限分成几类：
 
