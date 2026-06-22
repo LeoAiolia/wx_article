@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "wenyan-mcp": {
-      "command": "/Users/run/.nvm/versions/node/v24.14.1/bin/wenyan-mcp"
-    }
-  }
-}
