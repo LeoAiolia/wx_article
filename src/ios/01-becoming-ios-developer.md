@@ -1,5 +1,6 @@
 ---
 title: 成为 iOS 开发者，你需要准备什么？
+cover: ../assets/cover-becoming-ios-developer.jpeg
 ---
 
 # 成为 iOS 开发者，你需要准备什么？
