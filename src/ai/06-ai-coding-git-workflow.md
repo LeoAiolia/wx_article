@@ -33,7 +33,7 @@ git status
 - 哪些改动是你自己的
 - 哪些文件不应该被 AI 碰
 
-如果工作区已经很脏，最好先提交或 stash，再让 AI 开始。
+如果工作区已经很脏，最好先提交、切新分支，或者在确认 `git diff` 之后再 stash。不要把不清楚来源的改动随手 stash 掉，否则后面很容易忘记恢复，或者把两次任务混在一起。
 
 ---
 
@@ -50,6 +50,8 @@ git status
 不要把「新页面 + 路由 + 网络层 + 样式重构 + 测试」塞进一个 commit。
 
 AI 越能写，commit 越要小。
+
+![AI Coding 小步提交与回退节点示意](../assets/inline-ai-06-git-workflow.png)
 
 ---
 
@@ -100,6 +102,8 @@ docs(ai): add project map workflow
 - `git reset --hard`：同时丢弃工作区修改，风险最高
 
 AI 改坏了文件，很多时候只需要 `git restore <file>`，没必要重置整个仓库。
+
+但前提是：你确认这个文件里的改动都可以丢弃。如果同一个文件里既有 AI 改坏的内容，也有你自己的手写修改，就不要直接 restore 整个文件，应该先看 `git diff`，只手动拿掉有问题的部分。
 
 ---
 

@@ -127,6 +127,50 @@ AI Coding 工程化，必须包含安全工程化。
 
 ---
 
+## 七、一个最小工程系统长什么样
+
+如果从零开始，不需要一上来做得很复杂。一个移动端项目可以先准备这些东西：
+
+```
+AGENTS.md
+docs/project-map.md
+docs/component-map.md
+docs/release-checklist.md
+```
+
+再配一组固定命令：
+
+```
+dart analyze
+flutter test
+flutter build ios
+flutter build apk
+```
+
+最后列一份受保护清单：
+
+- 证书、签名、发布配置
+- Podfile、Runner 配置、Gradle 配置
+- 网络层公共封装
+- 路由表和 Deep Link 分发
+- 登录态、支付、订阅相关代码
+
+这些文件不是不能改，而是不能被 AI 顺手改。只要涉及它们，就应该先说明原因、影响范围、验证方式和回退方式。
+
+这套最小系统不重，但能解决三个核心问题：AI 知道项目规则，人知道怎么 review，CI 知道怎么拦住明显错误。
+
+![从 Prompt 到工程系统的流水线示意](../assets/inline-ai-09-engineering-system.png)
+
+如果今天就要开始做，可以按三步走：
+
+1. 先写一份 `AGENTS.md`，只放 10 条以内最容易犯错、最容易验证的项目规则。
+2. 再补 `docs/project-map.md`，把核心模块、入口页面、网络层、路由和跨端边界讲清楚。
+3. 最后把 `dart analyze`、`flutter test`、构建命令放进固定检查流程，至少让 AI 改完以后必须跑一遍。
+
+不要一开始就追求完整体系。先把最常犯的错挡住，再随着项目演进补规则、补文档、补自动化。
+
+---
+
 ## 参考资料与延伸阅读
 
 - OWASP：[Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
