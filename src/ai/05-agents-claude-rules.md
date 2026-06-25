@@ -60,7 +60,7 @@ cover: ../assets/cover-coding-agent-ios.png
 
 ![AI Coding 项目规则分层示意](../assets/inline-ai-05-rules-system.png)
 
-> 不同工具的规则入口不同——Claude Code 常用 `CLAUDE.md`，Cursor 用 `.cursorrules`（正迁移到 `.cursor/rules/`），GitHub Copilot 读 `.github/copilot-instructions.md`。更稳的做法是把项目规则维护成一份稳定的规则源，比如 `AGENTS.md`，再让不同工具通过自己的入口文件引用或同步它。使用 Claude Code 时，也可以在项目 `CLAUDE.md` 里通过 `@` 引用全局规则目录或项目规则文件。
+> 不同工具的规则入口不同——Claude Code 常用 `CLAUDE.md`，Cursor 用 `.cursorrules`（正迁移到 `.cursor/rules/`），GitHub Copilot 读 `.github/copilot-instructions.md`。更稳的做法是把项目规则维护成一份稳定的规则源，比如 `AGENTS.md`，再让不同工具通过自己的入口文件引用或同步它。使用 Claude Code 时，也可以在项目 `CLAUDE.md` 里通过 `@` 引用全局规则文件或项目规则文件。
 
 ---
 
@@ -123,7 +123,7 @@ cover: ../assets/cover-coding-agent-ios.png
 - 项目只写项目规则
 - 文档只写业务上下文
 
-具体落地时，推荐一个简单模式：**项目规则只维护一份项目内规则源**。比如用 `AGENTS.md` 放项目规则，然后在 Claude Code 的项目 `CLAUDE.md` 里用 `@AGENTS.md` 引用它；如果你还有一套全局 rule 目录，也可以在 Claude Code 入口文件里用 `@` 引用对应目录。其他工具（Cursor、GitHub Copilot 等）也通过各自的规则文件指向同一份项目规则，避免多文件漂移。
+具体落地时，推荐一个简单模式：**项目规则只维护一份项目内规则源**。比如用 `AGENTS.md` 放项目规则，然后在 Claude Code 的项目 `CLAUDE.md` 里用 `@AGENTS.md` 引用它；如果你还有一套全局 rule 目录，也可以在 Claude Code 入口文件里用 `@` 引用其中的具体规则文件，比如 `@~/rule/AGENTS.md`。其他工具（Cursor、GitHub Copilot 等）也通过各自的规则文件指向同一份项目规则，避免多文件漂移。
 
 如果全局规则和项目规则确实冲突了（比如全局要求英文回复，但项目是中文项目），优先级很简单：**项目规则 > 全局规则**，越具体者越优先。
 
