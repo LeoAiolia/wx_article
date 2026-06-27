@@ -35,6 +35,7 @@
 | 13 | [AI Coding 移动端工程实践（七）：从 Prompt 到工程系统](src/ai/09-ai-coding-engineering-system.md) | AI |
 | 14 | [Agent Skills 和 MCP 到底有什么区别？聊聊 AI 编程里的两种扩展方式](src/ai/10-skills-vs-mcp.md) | AI |
 | 15 | [Superpowers：我为什么开始让 AI 按工程流程干活](src/ai/11-superpowers-skill.md) | AI |
+| 16 | [CocoaPods 进入维护模式：iOS 项目的 SPM 迁移笔记](src/ios/04-cocoapods-to-spm-migration.md) | iOS |
 
 ## 目录结构
 
