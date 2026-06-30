@@ -428,14 +428,6 @@ Hooks 很有用，但不适合一上来就配一堆。
 
 ---
 
-## 参考资料与延伸阅读
-
-- Stormzhang：《钩子（Hooks）：在固定时机自动扣扳机》：https://coding.stormzhang.ai/claude-code/33-hooks.html
-- Anthropic Docs：Claude Code Hooks Guide：https://docs.anthropic.com/en/docs/claude-code/hooks-guide
-- Anthropic Docs：Claude Code Hooks Reference：https://docs.anthropic.com/en/docs/claude-code/hooks
-
----
-
 ## 写在最后
 
 AI Coding 的工程化，不是把所有事情都交给 AI。
