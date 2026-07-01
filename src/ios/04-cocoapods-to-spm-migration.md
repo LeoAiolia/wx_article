@@ -290,7 +290,7 @@ targets:
       - package: SnapKit
 ```
 
-### 6. Flutter App / Module / Plugin 分开处理
+### 6. 步骤六：Flutter App / Module / Plugin 分开处理
 
 Flutter 这里要分场景。普通 Flutter App、Flutter module add-to-app、Flutter plugin 作者，三种场景都叫「用 SPM」，但要维护的东西不一样。
 
