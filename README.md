@@ -37,7 +37,7 @@
 | 15 | [Superpowers：我为什么开始让 AI 按工程流程干活](src/ai/11-superpowers-skill.md) | AI |
 | 16 | [CocoaPods 进入维护模式：iOS 项目的 SPM 迁移笔记](src/ios/04-cocoapods-to-spm-migration.md) | iOS |
 | 17 | [AI Coding 移动端工程实践（八）：用 Hooks 让 AI 改完代码自动收尾](src/ai/12-ai-coding-hooks-format.md) | AI |
-| 18 | [从苹果供应链事件，聊聊软件团队的安全边界](src/ios/05-apple-supply-chain-tata-leak.md) | iOS |
+| 18 | [苹果供应链伙伴数据安全事件，又把 AI 工具风险带上热搜](src/ios/05-apple-supply-chain-tata-leak.md) | iOS |
 
 ## 目录结构
 
