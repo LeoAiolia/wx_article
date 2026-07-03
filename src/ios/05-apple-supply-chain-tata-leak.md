@@ -1,9 +1,9 @@
 ---
-title: 苹果真正怕泄露的，可能不是 iPhone 外观
+title: 从苹果供应链事件，聊聊软件团队的安全边界
 cover: ../assets/cover-apple-supply-chain-tata-leak.png
 ---
 
-# 苹果真正怕泄露的，可能不是 iPhone 外观
+# 从苹果供应链事件，聊聊软件团队的安全边界
 
 > 一次供应链数据事件，提醒我们的不只是苹果，还有每个软件团队自己的安全边界。
 
