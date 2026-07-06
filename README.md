@@ -39,6 +39,7 @@
 | 17 | [LongCat：美团开源的大模型，到底什么来头？](src/ai/13-longcat-usage-experience.md) | AI |
 | 18 | [AI Coding 移动端工程实践（八）：用 Hooks 让 AI 改完代码自动收尾](src/ai/12-ai-coding-hooks-format.md) | AI |
 | 19 | [苹果供应链伙伴数据安全事件，又把 AI 工具风险带上热搜](src/ios/05-apple-supply-chain-tata-leak.md) | iOS |
+| 20 | [被 Claude 封怕了？聊聊智谱的 AI 编辑器 Zcode 以及我为什么看好它](src/ai/14-zcode-experience.md) | AI |
 
 ## 目录结构
 
