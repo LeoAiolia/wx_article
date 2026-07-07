@@ -41,7 +41,7 @@
 | 19 | [苹果供应链伙伴数据安全事件，又把 AI 工具风险带上热搜](src/ios/05-apple-supply-chain-tata-leak.md) | iOS |
 | 20 | [被 Claude 封怕了？聊聊智谱的 AI 编辑器 Zcode 以及我为什么看好它](src/ai/14-zcode-experience.md) | AI |
 | 21 | [微信、支付宝同时“大放水”：我们正站在 AI 应用爆发的前夜](src/ai/15-ai-app-eve.md) | AI |
-| 22 | [笑死！华为 AI 坚称自己是 Claude？聊聊刚发布的 DevEco Code](src/ai/16-deveco-code-intro.md) | AI |
+| 22 | [GLM模型抢不到，来华为Deveco code免费薅羊毛](src/ai/16-deveco-code-intro.md) | AI |
 
 ## 目录结构
 
