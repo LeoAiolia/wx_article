@@ -42,6 +42,7 @@
 | 20 | [被 Claude 封怕了？聊聊智谱的 AI 编辑器 Zcode 以及我为什么看好它](src/ai/14-zcode-experience.md) | AI |
 | 21 | [微信、支付宝同时“大放水”：我们正站在 AI 应用爆发的前夜](src/ai/15-ai-app-eve.md) | AI |
 | 22 | [GLM模型抢不到，来华为Deveco code免费薅羊毛](src/ai/16-deveco-code-intro.md) | AI |
+| 23 | [推荐一个超硬核的 AI 编程 CLI 终极中文指南（Claude Code + Codex）](src/ai/17-ai-coding-guide-stormzhang.md) | AI |
 
 ## 目录结构
 
