@@ -45,6 +45,7 @@
 | 23 | [推荐一个超硬核的 AI 编程 CLI 终极中文指南（Claude Code + Codex）](src/ai/17-ai-coding-guide-stormzhang.md) | AI |
 | 24 | [你真的会配置环境变量吗？](src/ai/18-zsh-env-variables-for-ai.md) | AI |
 | 25 | [Flutter 左右双文本布局问题探讨](src/ios/06-flutter-custom-multi-child-layout.md) | iOS |
+| 26 | [Flutter 时间轴线画不出来？快用 IntrinsicHeight 测量魔法！](src/ios/07-flutter-intrinsic-height-timeline.md) | iOS |
 
 ## 目录结构
 
