@@ -47,6 +47,7 @@
 | 25 | [Flutter 左右双文本布局问题探讨](src/ios/06-flutter-custom-multi-child-layout.md) | iOS |
 | 26 | [Flutter 时间轴线画不出来？快用 IntrinsicHeight 测量魔法！](src/ios/07-flutter-intrinsic-height-timeline.md) | iOS |
 | 27 | [从“信息焦虑”到“第二大脑”：为什么你现在需要一个 AI 知识库？](src/ai/19-tencent-ima-knowledge-base.md) | AI |
+| 28 | [Flutter 告别 if-else 泥潭：写好 Dart 3 Switch 表达式的实战指南](src/ios/08-dart3-switch-expression.md) | iOS |
 
 ## 目录结构
 
