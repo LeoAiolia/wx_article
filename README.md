@@ -51,6 +51,7 @@
 | 29 | [Flutter 开发必备：盘点那些让代码飞起的 Dart 语法糖](src/ios/09-dart-flutter-syntactic-sugar.md) | iOS |
 | 30 | [国家超算互联网大模型服务避坑指南：Token Plan 与 Coding Plan 到底有什么区别？](src/ai/20-china-scnet-intro.md) | AI |
 | 31 | [别再一把梭了！AI 时代，如何用优雅的 Git 分支管理拯救你的混乱代码？](src/ios/10-git-branch-management.md) | iOS |
+| 32 | [当代码不再由指尖流淌](src/others/ai-offline-afternoon.md) | 随笔 |
 
 ## 目录结构
 
