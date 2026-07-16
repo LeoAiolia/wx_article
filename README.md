@@ -53,6 +53,7 @@
 | 31 | [别再一把梭了！AI 时代，如何用优雅的 Git 分支管理拯救你的混乱代码？](src/ios/10-git-branch-management.md) | iOS |
 | 32 | [当代码不再由指尖流淌](src/others/ai-offline-afternoon.md) | 随笔 |
 | 33 | [看山还是山](src/others/mountain-water.md) | 随笔 |
+| 34 | [腾讯低调内测 Agent Mail：QQ邮箱团队为 AI Agent 打造的专属邮箱](src/ai/21-tencent-agent-mail.md) | AI |
 
 ## 目录结构
 
