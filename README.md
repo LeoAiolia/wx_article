@@ -56,6 +56,7 @@
 | 34 | [腾讯低调内测 Agent Mail：QQ邮箱团队为 AI Agent 打造的专属邮箱](src/ai/21-tencent-agent-mail.md) | AI |
 | 35 | [全球最大开源模型来了！解读月之暗面 2.8 万亿参数 Kimi K3 的硬核突破](src/ai/22-kimi-k3-intro.md) | AI |
 | 36 | [不要急着让 AI 写代码——先让它"审讯"你的想法](src/ai/23-grill-me-thinking-mode.md) | AI |
+| 37 | [拒绝硬截断！Flutter 优雅适配 iOS 底部安全区（HomeBar）的正确姿势](src/ios/11-flutter-safearea-homebar-adaptation.md) | iOS |
 
 ## 目录结构
 
