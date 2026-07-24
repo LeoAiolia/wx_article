@@ -57,6 +57,7 @@
 | 35 | [全球最大开源模型来了！解读月之暗面 2.8 万亿参数 Kimi K3 的硬核突破](src/ai/22-kimi-k3-intro.md) | AI |
 | 36 | [不要急着让 AI 写代码——先让它"审讯"你的想法](src/ai/23-grill-me-thinking-mode.md) | AI |
 | 37 | [拒绝硬截断！Flutter 优雅适配 iOS 底部安全区（HomeBar）的正确姿势](src/ios/11-flutter-safearea-homebar-adaptation.md) | iOS |
+| 38 | [告别单 Window 时代：UIKit Scene 生命周期的架构演进与迁移实战](src/ios/12-uikit-scene-based-life-cycle.md) | iOS |
 
 ## 目录结构
 
